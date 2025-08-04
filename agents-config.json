@@ -27,7 +27,7 @@
   },
   "environments": {
     "development": {
-      "branch": "development",
+      "branch": "dev",
       "enabledAgents": ["personal-app-builder", "product-manager"],
       "testMode": true
     },
