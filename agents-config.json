@@ -43,7 +43,6 @@
     }
   },
   "settings": {
-    "containsStudioPath": "contains-studio/",
     "customAgentsPath": "./",
     "requireReviewBeforeProduction": true,
     "defaultEnvironment": "development"
