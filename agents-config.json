@@ -37,13 +37,12 @@
       "testMode": true
     },
     "production": {
-      "branch": "main",
+      "branch": "prod",
       "enabledAgents": ["personal-app-builder", "product-manager"],
       "testMode": false
     }
   },
   "settings": {
-    "containsStudioPath": "contains-studio/",
     "customAgentsPath": "./",
     "requireReviewBeforeProduction": true,
     "defaultEnvironment": "development"
