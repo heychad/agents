@@ -1,0 +1,42 @@
+{
+  "customAgents": {
+    "product-manager": {
+      "name": "Product Manager",
+      "description": "Healthcare tech product management, sprint planning, and backlog prioritization",
+      "category": "product-management",
+      "tools": ["Write", "Read", "MultiEdit", "WebSearch", "TodoWrite"],
+      "path": "product-management/product-manager.md",
+      "enabled": true,
+      "version": "1.0.0",
+      "author": "heychad",
+      "tags": ["product", "healthcare", "sprint-planning", "backlog", "agile"],
+      "domainExpertise": ["HIPAA", "HL7", "FHIR", "Clinical Workflows"]
+    }
+  },
+  "environments": {
+    "development": {
+      "branch": "development",
+      "enabledAgents": ["product-manager"],
+      "testMode": true
+    },
+    "staging": {
+      "branch": "staging",
+      "enabledAgents": ["product-manager"],
+      "testMode": true,
+      "requiresApproval": false
+    },
+    "production": {
+      "branch": "main",
+      "enabledAgents": ["product-manager"],
+      "testMode": false,
+      "requiresApproval": true
+    }
+  },
+  "settings": {
+    "containsStudioPath": "contains-studio/",
+    "customAgentsPath": "./",
+    "requireReviewBeforeProduction": true,
+    "defaultEnvironment": "development",
+    "autoLoadContainsStudio": false
+  }
+}

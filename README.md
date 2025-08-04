@@ -1,87 +1,71 @@
-# Contains Studio AI Agents
+# Custom Agents Repository
 
-A comprehensive collection of specialized AI agents designed to accelerate and enhance every aspect of rapid development. Each agent is an expert in their domain, ready to be invoked when their expertise is needed.
+This repository contains both Contains Studio agents (for reference) and custom agents developed for healthcare technology products. Each agent is an expert in their domain, ready to be invoked when their expertise is needed.
 
-## 📥 Installation
-
-1. **Download this repository:**
-   ```bash
-   git clone https://github.com/contains-studio/agents.git
-   ```
-
-2. **Copy to your Claude Code agents directory:**
-   ```bash
-   cp -r agents/* ~/.claude/agents/
-   ```
-   
-   Or manually copy all the agent files to your `~/.claude/agents/` directory.
-
-3. **Restart Claude Code** to load the new agents.
-
-## 🚀 Quick Start
-
-Agents are automatically available in Claude Code. Simply describe your task and the appropriate agent will be triggered. You can also explicitly request an agent by mentioning their name.
-
-📚 **Learn more:** [Claude Code Sub-Agents Documentation](https://docs.anthropic.com/en/docs/claude-code/sub-agents)
-
-### Example Usage
-- "Create a new app for tracking meditation habits" → `rapid-prototyper`
-- "What's trending on TikTok that we could build?" → `trend-researcher`
-- "Our app reviews are dropping, what's wrong?" → `feedback-synthesizer`
-- "Make this loading screen more fun" → `whimsy-injector`
-
-## 📁 Directory Structure
-
-Agents are organized by department for easy discovery:
+## 📁 Repository Structure
 
 ```
-contains-studio-agents/
-├── design/
-│   ├── brand-guardian.md
-│   ├── ui-designer.md
-│   ├── ux-researcher.md
-│   ├── visual-storyteller.md
-│   └── whimsy-injector.md
-├── engineering/
-│   ├── ai-engineer.md
-│   ├── backend-architect.md
-│   ├── devops-automator.md
-│   ├── frontend-developer.md
-│   ├── mobile-app-builder.md
-│   ├── rapid-prototyper.md
-│   └── test-writer-fixer.md
-├── marketing/
-│   ├── app-store-optimizer.md
-│   ├── content-creator.md
-│   ├── growth-hacker.md
-│   ├── instagram-curator.md
-│   ├── reddit-community-builder.md
-│   ├── tiktok-strategist.md
-│   └── twitter-engager.md
-├── product/
-│   ├── feedback-synthesizer.md
-│   ├── sprint-prioritizer.md
-│   └── trend-researcher.md
-├── project-management/
-│   ├── experiment-tracker.md
-│   ├── project-shipper.md
-│   └── studio-producer.md
-├── studio-operations/
-│   ├── analytics-reporter.md
-│   ├── finance-tracker.md
-│   ├── infrastructure-maintainer.md
-│   ├── legal-compliance-checker.md
-│   └── support-responder.md
-├── testing/
-│   ├── api-tester.md
-│   ├── performance-benchmarker.md
-│   ├── test-results-analyzer.md
-│   ├── tool-evaluator.md
-│   └── workflow-optimizer.md
-└── bonus/
-    ├── joker.md
-    └── studio-coach.md
+agents/
+├── contains-studio/        # Original Contains Studio agents (for reference)
+│   ├── bonus/
+│   ├── design/
+│   ├── engineering/
+│   ├── marketing/
+│   ├── product/
+│   ├── project-management/
+│   ├── studio-operations/
+│   └── testing/
+├── product-management/     # Custom product management agents
+│   └── product-manager.md
+├── engineering/           # Custom engineering agents (future)
+├── design/               # Custom design agents (future)
+├── testing/              # Custom testing agents (future)
+└── README.md             # This file
 ```
+
+## 🚀 Development Workflow
+
+### Branch Management
+
+1. **development** - Active development and testing
+2. **staging** - Pre-production validation
+3. **main** - Production-ready agents
+
+### Workflow Steps
+
+```bash
+# Start new agent development
+git checkout development
+git checkout -b feature/agent-name
+
+# After testing, merge to development
+git checkout development
+git merge feature/agent-name
+
+# Promote to staging
+git checkout staging
+git merge development
+
+# Deploy to production
+git checkout main
+git merge staging
+```
+
+## 📋 Custom Agents
+
+### Product Management
+
+#### Product Manager
+- **Location**: `product-management/product-manager.md`
+- **Purpose**: Healthcare tech sprint planning and backlog management
+- **Status**: Active Development
+- **Version**: 1.0.0
+- **Tools**: Write, Read, MultiEdit, WebSearch, TodoWrite
+
+### Future Agents (Planned)
+- Engineering agents for healthcare APIs and compliance
+- Design agents for clinical UX patterns
+- Testing agents for HIPAA compliance validation
 
 ## 📋 Complete Agent List
 
