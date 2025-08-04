@@ -15,11 +15,11 @@ agents/
 │   ├── project-management/
 │   ├── studio-operations/
 │   └── testing/
-├── product-management/     # Custom product management agents
+├── personal/              # Personal utility agents
+│   └── personal-app-builder.md
+├── work/                  # Work-related agents
 │   └── product-manager.md
-├── engineering/           # Custom engineering agents (future)
-├── design/               # Custom design agents (future)
-├── testing/              # Custom testing agents (future)
+├── agents-config.json     # Configuration file
 └── README.md             # This file
 ```
 
@@ -53,10 +53,10 @@ git merge staging
 
 ## 📋 Custom Agents
 
-### Product Management
+### Work Agents
 
 #### Product Manager
-- **Location**: `product-management/product-manager.md`
+- **Location**: `work/product-manager.md`
 - **Purpose**: Healthcare tech sprint planning and backlog management
 - **Status**: Active Development
 - **Version**: 1.0.0
